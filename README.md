@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop](desk.png)
+![Mobile](/mob.png)
 
 
 ### Links
@@ -73,3 +74,8 @@ Better:
 🔴Uncaught SyntaxError: Cannot use import statement outside a module (at index.js:1:1)
 
 🔴eclipse Image was resizing on screen changes
+
+PENDING 03 FEB
+
+- OPTIMIZATION
+- REVIEW 
