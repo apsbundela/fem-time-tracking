@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="tck-page-wrapper">
+            <!-- Profile -->
+            <section class="tck-profile-wrap">
+                <div class="tck-info">
+                    <img class="tck-img" src="/images/image-jeremy.png" alt="Jeremy Profile"/>
+                    <div class="profile-info">
+                        <p class="report">Report for</p>
+                        <h4 class="profile-name">Jeremy Robson</h4>
+                    </div>
+                </div>
+                <ul id="tabs" class="tck-time-tabs">
+                    <li data-active-tab="daily" class="tck-daily">Daily</li>
+                    <li data-active-tab="weekly" class="tck-weekly">Weekly</li>
+                    <li data-active-tab="monthly" class="tck-monthly">Monthly</li>
+                </ul>
+            </section>
+            <!-- TimeFrames -->
+                <section class="tck-timeframe-wrap" data-title="work">
+                    <div class="tck-category-img work">
+                        <img src="/images/icon-work.svg"/>
+                    </div>
+                    <div class="tck-tf-deatil">
+                        <div class="tck-tf-header">
+                            <span class="tck-category-title">Work</span>
+                            <img src="/images/icon-ellipsis.svg"/>
+                        </div>
+                        <div class="tck-tf-periods">
+                            <p class="tck-category-hrs"></p>
+                            <p class="tck-category-last"></p>
+                        </div>
+                    </div>
+                </section>
+                <section class="tck-timeframe-wrap" data-title="play">
+                    <div class="tck-category-img play">
+                        <img src="/images/icon-play.svg"/>
+                    </div>
+                    <div class="tck-tf-deatil">
+                        <div class="tck-tf-header">
+                            <span class="tck-category-title"></span>
+                            <img src="/images/icon-ellipsis.svg"/>
+                        </div>
+                        <div class="tck-tf-periods">
+                            <p class="tck-category-hrs"></p>
+                            <p class="tck-category-last"></p>
+                        </div>
+                    </div>
+               </section>
+                <section class="tck-timeframe-wrap" data-title="study">
+                    <div class="tck-category-img study">
+                        <img src="/images/icon-study.svg"/>
+                    </div>
+                    <div class="tck-tf-deatil">
+                        <div class="tck-tf-header">
+                            <span class="tck-category-title">Study</span>
+                            <img src="/images/icon-ellipsis.svg"/>
+                        </div>
+                        <div class="tck-tf-periods">
+                            <p class="tck-category-hrs"></p>
+                            <p class="tck-category-last"></p>
+                        </div>
+                    </div>
+                </section>
+                <section class="tck-timeframe-wrap" data-title="exercise">
+                    <div class="tck-category-img exercise">
+                        <img src="/images/icon-exercise.svg"/>
+                    </div>
+                    <div class="tck-tf-deatil">
+                        <div class="tck-tf-header">
+                            <span class="tck-category-title">Exercise</span>
+                            <img src="/images/icon-ellipsis.svg"/>
+                        </div>
+                        <div class="tck-tf-periods">
+                            <p class="tck-category-hrs"></p>
+                            <p class="tck-category-last"></p>
+                        </div>
+                    </div>
+                </section>
+                <section class="tck-timeframe-wrap" data-title="social">
+                    <div class="tck-category-img social">
+                        <img src="/images/icon-social.svg"/>
+                    </div>
+                    <div class="tck-tf-deatil">
+                        <div class="tck-tf-header">
+                            <span class="tck-category-title">Social</span>
+                            <img src="/images/icon-ellipsis.svg"/>
+                        </div>
+                        <div class="tck-tf-periods">
+                            <p class="tck-category-hrs"></p>
+                            <p class="tck-category-last"></p>
+                        </div>
+                    </div>
+                </section>
+                <section class="tck-timeframe-wrap" data-title="self care">
+                    <div class="tck-category-img care">
+                        <img src="/images/icon-self-care.svg"/>
+                    </div>
+                    <div class="tck-tf-deatil">
+                        <div class="tck-tf-header">
+                            <span class="tck-category-title">Self Care</span>
+                            <img src="/images/icon-ellipsis.svg"/>
+                        </div>
+                        <div class="tck-tf-periods">
+                            <p class="tck-category-hrs"></p>
+                            <p class="tck-category-last"></p>
+                        </div>
+                    </div>
+                </section>
+        </div>
+    </main>
+<script type="module" src="index.js"></script>
+</body>
+</html>
