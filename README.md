@@ -156,11 +156,28 @@ Images were resizing unexpectedly when the screen size changed.
 
 Example:
 
-```css
-img {
-  max-width: 100%;
-  height: auto;
-}
+### 5️⃣ Asset Paths & Deployment Notes
+
+**Issue:**
+  When deploying this project, make sure all asset paths (CSS, JavaScript, images) use explicit relative paths.
+
+**Fix & best practices:**
+
+
+Example:
+
+```html
+<link rel="stylesheet" href="./style.css">
+<script src="./index.js"></script>
+<img src="./images/icon-work.svg">
+
+```
+
+Not this 
+
+```html
+<link rel="stylesheet" href="style.css">
+<img src="images/icon-work.svg">
 ```
 
 **Lesson:**
